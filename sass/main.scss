@@ -520,6 +520,62 @@ body {
 }
 
 
+// footer
+.footer {
+    color: $pure-white;
+    background-color: $dark;
+
+    .wrapper {
+        padding: 4em 2em 2em;
+    }
+
+    &__box {
+        font-size: 1.4rem;
+
+        &-tittle {
+            i {
+                color: $main-color;
+            }
+        }
+    }
+
+    &__box-desktop {
+        display: none;
+    }
+
+    &__box-tittle {
+        margin-bottom: 1em;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    &__box-social {
+        margin: 2em 0 1em;
+    }
+
+    &__box-link {
+        padding: 0 .3em;
+        color: $pure-white;
+        font-size: 3.6rem;
+        text-decoration: none;
+        transition: color .3s;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+
+    &__bottom-text {
+        padding: 2em;
+        text-align: center;
+    }
+}
+
+
 // media
 @media(min-width: 576px) {
     .dreams {
@@ -635,6 +691,48 @@ body {
             margin: 1em;
             width: 45%;
         }
+    }
+
+    .footer {
+        &__boxes {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__box-desktop {
+            display: block;
+        }
+
+        &__box {
+            margin: 0 2em;
+            width: 25%;
+
+            &:first-child {
+                width: 50%;
+            }
+        }
+
+        &__box-tittle {
+            font-size: 2.4rem;
+        }
+
+        &__box-list {
+            list-style: none;
+        }
+
+        &__box-list-item {
+            margin-bottom: 1em;
+
+            a {
+                color: $light-white;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $main-color;
+            }
+        }
+
     }
 }
 
